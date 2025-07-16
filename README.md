@@ -5,6 +5,7 @@ A Flask-based web application that supports multilingual question answering. The
 ## Features
 
 - GPU acceleration with CUDA
+- 200+ languages
 
 ## Setup Instructions
 
