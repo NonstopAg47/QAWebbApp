@@ -10,7 +10,7 @@ A Flask-based web application that supports multilingual question answering. The
 
 ### 1. Prerequisites
 
-- [CUDA Toolkit](https://developer.nvidia.com/cuda-12-8-0-download-archive) and a compatible GPU (or modify code to use CPU)
+- [CUDA Toolkit](https://developer.nvidia.com/cuda-12-8-0-download-archive) and a compatible GPU with minimum ~3.7 GB GPU memory (or modify code to use CPU)
 - [Hugging Face token](https://huggingface.co/settings/tokens) for API access
 
 ### 2. Setup
@@ -45,6 +45,9 @@ python flask_app.py
 ## Additional
 - DeepSeek can be used to rephrase the answers into declarative statements but the model produces inconsistent results due to lack of proper deepseek_prompt[]. Using DeepSeek also increases computational time. The code is still included in code but disabled by default. Enable if needed by commenting/uncommenting relevant lines
 
-- The textual data stored at `llm-script.txt` is currently unformatted and therefore less accurate. It can be formatted into declarative statements and each statement can be put on a new line for better results
+- The textual data stored at `llm-script.txt` is currently unformatted and therefore less accurate. It can be formatted into declarative statements and each statement can be put on a new line for better results. Alternatively in future RAG pipeline could be used
 
-- Tested on Windows 10 64-bit with RTX-4070 and 12 GB GPU memory. ( It is not the minimum requirement and should work on comparatively weaker computers)
+## Screenshots
+![Screenshot1](screenshots/1.PNG)
+![Screenshot2](screenshots/2.PNG)
+![Screenshot3](screenshots/3.PNG)
